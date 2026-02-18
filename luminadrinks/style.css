@@ -1,136 +1,139 @@
-
-
 :root {
-    --color-cream: #F5F1E8;
-    --color-beige: #E8DCC8;
-    --color-gold: #C9A961;
-    --color-dark-gold: #A08040;
-    --color-charcoal: #2C2C2C;
-    --color-black: #000000;
-    --color-white: #FFFFFF;
-    --color-grey: #666666;
-    
-    --font-serif: 'Cormorant Garamond', Georgia, serif;
-    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 2rem;
-    --spacing-lg: 4rem;
-    --spacing-xl: 6rem;
+  --color-cream: #f5f1e8;
+  --color-beige: #e8dcc8;
+  --color-gold: #c9a961;
+  --color-dark-gold: #a08040;
+  --color-charcoal: #2c2c2c;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-grey: #666666;
+
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-sans);
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--color-charcoal);
-    background: var(--color-cream);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-charcoal);
+  background: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-serif);
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
 }
 
 h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2rem, 4vw, 3rem);
 }
 
 h3 {
-    font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s ease;
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 a:hover {
-    color: var(--color-gold);
+  color: var(--color-gold);
 }
 
 .site-content {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .wp-block-group {
-    margin: 0;
+  margin: 0;
 }
 
 .wp-block-button__link,
 button {
-    font-family: var(--font-sans);
-    font-size: 0.875rem;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 1rem 2.5rem;
-    border: 2px solid var(--color-gold);
-    background: transparent;
-    color: var(--color-charcoal);
-    cursor: pointer;
-    transition: all 0.3s ease;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 1rem 2.5rem;
+  border: 2px solid var(--color-gold);
+  background: transparent;
+  color: var(--color-charcoal);
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .wp-block-button__link:hover,
 button:hover {
-    background: var(--color-gold);
-    color: var(--color-white);
-    transform: translateY(-1px);
-    box-shadow: 0 10px 20px rgba(201, 169, 97, 0.2);
+  background: var(--color-gold);
+  color: var(--color-white);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(201, 169, 97, 0.2);
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .alignfull {
-    width: 100vw;
-    max-width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 
 .alignwide {
-    width: 90vw;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 90vw;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 768px) {
-    :root {
-        --spacing-lg: 2rem;
-        --spacing-xl: 3rem;
-    }
+  :root {
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+  }
 }
 
 .wp-block-post-title {
-    display: none !important;
+  display: none !important;
 }
 
 .page-id-123 .wp-block-post-title {
-    display: none !important;
+  display: none !important;
 }
 
 .home .wp-block-post-title {
-    display: none !important;
+  display: none !important;
 }
