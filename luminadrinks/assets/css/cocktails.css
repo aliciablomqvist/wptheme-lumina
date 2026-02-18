@@ -1,0 +1,358 @@
+.lumina-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.lumina-hero h1,
+.lumina-hero h2 {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.wp-block-columns.are-vertically-aligned-center {
+  align-items: center;
+}
+
+.wp-block-columns > .wp-block-column {
+  position: relative;
+  overflow: hidden;
+}
+
+.wp-block-columns > .wp-block-column img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.wp-block-group .wp-block-columns {
+  margin-bottom: 0;
+}
+
+.wp-block-button .wp-block-button__link {
+  position: relative;
+  overflow: hidden;
+}
+
+.wp-block-button .wp-block-button__link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.6s,
+    height 0.6s;
+}
+
+.wp-block-button .wp-block-button__link:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.wp-block-group {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lumina-hero,
+.wp-block-cover {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.wp-block-heading::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: var(--wp--preset--color--gold);
+  margin-top: 1.5rem;
+  transition: width 0.4s ease;
+}
+
+.wp-block-heading:hover::after {
+  width: 100px;
+}
+
+.has-text-align-center::after {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .lumina-hero h1 {
+    font-size: 3rem !important;
+  }
+
+  .lumina-hero h2 {
+    font-size: 2rem !important;
+  }
+
+  .wp-block-columns {
+    flex-direction: column;
+  }
+
+  .wp-block-column {
+    flex-basis: 100% !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .lumina-hero {
+    min-height: 70vh !important;
+  }
+
+  .lumina-hero h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .wp-block-group {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  .wp-block-columns > .wp-block-column img {
+    height: 300px;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.wp-block-image.is-loading {
+  background: linear-gradient(to right, #e8dcc8 0%, #f5f1e8 50%, #e8dcc8 100%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+}
+
+.has-serif-font-family {
+  font-feature-settings:
+    "liga" 1,
+    "dlig" 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--wp--preset--color--gold);
+  color: var(--wp--preset--color--white);
+}
+
+::-moz-selection {
+  background: var(--wp--preset--color--gold);
+  color: var(--wp--preset--color--white);
+}
+
+.lumina-reservation-form input:focus,
+.lumina-reservation-form select:focus,
+.lumina-reservation-form textarea:focus {
+  outline: none;
+  border-color: #a08040;
+  box-shadow: 0 0 0 3px rgba(201, 169, 97, 0.2);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.wp-block-button__link {
+  position: relative;
+  overflow: hidden;
+}
+
+.wp-block-button__link::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.6s,
+    height 0.6s;
+}
+
+.wp-block-button__link:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+* {
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body {
+    cursor:
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><circle cx="10" cy="10" r="8" fill="%23C9A961" opacity="0.5"/></svg>'),
+      auto;
+  }
+
+  a,
+  button {
+    cursor:
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><circle cx="12" cy="12" r="10" fill="%23C9A961"/></svg>'),
+      pointer;
+  }
+}
+
+.wp-block-image::before,
+.wp-block-image:hover::before {
+  display: none !important;
+}
+
+.wp-block-image img {
+  transform: none !important;
+  filter: none !important;
+  transition: none !important;
+}
+
+.wp-block-group:hover {
+  transform: none !important;
+}
+
+.wp-block-heading::before,
+.wp-block-heading:hover::before {
+  display: none !important;
+}
+
+.wp-block-group h4 {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: inherit !important;
+  background-clip: unset !important;
+}
+
+.has-gold-color {
+  animation: none !important;
+}
+
+body,
+a,
+button {
+  cursor: default !important;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer !important;
+}
+
+.lumina-instagram-grid .wp-block-image::after {
+  display: none !important;
+}
+
+.lumina-instagram-grid .wp-block-image:hover img {
+  filter: none !important;
+}
+
+.lumina-reservation-form input:focus,
+.lumina-reservation-form select:focus,
+.lumina-reservation-form textarea:focus {
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+* {
+  transition: none !important;
+}
+
+.wp-block-button__link,
+button {
+  transition: all 0.3s ease !important;
+}
+
+.wp-block-button__link,
+button {
+  transition: all 0.3s ease !important;
+}
+
+.wp-block-button__link:hover,
+button:hover {
+  background: #c9a961 !important;
+  color: #ffffff !important;
+  box-shadow:
+    0 0 0 2px rgba(201, 169, 97, 0.2),
+    0 4px 12px rgba(201, 169, 97, 0.3);
+}
+
+.event-date::after {
+  display: none !important;
+}
+
+h1.wp-block-heading::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: var(--wp--preset--color--gold);
+  margin-top: 1.5rem;
+}
+
+h2.wp-block-heading::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: var(--wp--preset--color--gold);
+  margin-top: 1.5rem;
+}
+
+h3.wp-block-heading::after {
+  display: none !important;
+}
+
+.wp-block-heading:hover::after {
+}
+
+.has-text-align-center::after {
+  display: none !important;
+}
+
+.wp-block-navigation__responsive-container-content
+  .wp-block-navigation__container {
+  gap: 4rem !important;
+}
+
+.wp-block-navigation .wp-block-navigation-item {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}

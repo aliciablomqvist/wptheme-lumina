@@ -1,0 +1,108 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "cream",
+          "color": "#F5F1E8",
+          "name": "Cream"
+        },
+        {
+          "slug": "beige",
+          "color": "#E8DCC8",
+          "name": "Beige"
+        },
+        {
+          "slug": "gold",
+          "color": "#C9A961",
+          "name": "Gold"
+        },
+        {
+          "slug": "dark-gold",
+          "color": "#A08040",
+          "name": "Dark Gold"
+        },
+        {
+          "slug": "charcoal",
+          "color": "#2C2C2C",
+          "name": "Charcoal"
+        },
+        {
+          "slug": "black",
+          "color": "#000000",
+          "name": "Black"
+        },
+        {
+          "slug": "white",
+          "color": "#FFFFFF",
+          "name": "White"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "'Cormorant Garamond', Georgia, serif",
+          "slug": "serif",
+          "name": "Cormorant Garamond"
+        },
+        {
+          "fontFamily": "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
+          "slug": "sans",
+          "name": "Inter"
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": "1200px",
+      "wideSize": "100%"
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true,
+      "units": ["px", "em", "rem", "vh", "vw", "%"]
+    },
+    "useRootPaddingAwareAlignments": false
+  },
+  "styles": {
+    "color": {
+      "background": "#F5F1E8",
+      "text": "#2C2C2C"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--sans)",
+      "fontSize": "16px",
+      "lineHeight": "1.6"
+    },
+    "elements": {
+      "h1": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--serif)",
+          "fontSize": "clamp(2.5rem, 5vw, 4rem)",
+          "fontWeight": "400",
+          "lineHeight": "1.2"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--serif)",
+          "fontSize": "clamp(2rem, 4vw, 3rem)",
+          "fontWeight": "400",
+          "lineHeight": "1.2"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "#2C2C2C"
+        },
+        ":hover": {
+          "color": {
+            "text": "#C9A961"
+          }
+        }
+      }
+    }
+  }
+}
